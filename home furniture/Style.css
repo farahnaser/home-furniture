@@ -1,0 +1,373 @@
+body{ 
+    --main-color:#f6bdd1;
+    --bg:#5c374c;
+     background: var(--bg);
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+}
+
+html{
+    font-size: 70%;
+}
+
+section{
+    padding:100px;
+}
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5px;
+    font-size: 40px;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+ .btn{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px ;
+    font-size: 20px;
+    color:#1c2541;
+    background: linear-gradient(to bottom right,#e4c1f9,#746868);
+} 
+
+.btn:hover{
+    letter-spacing: 0.3rem;
+}
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top:0; left: 0; right: 0;
+}
+
+.header .logo h3{
+    height: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    color: var(--main-color);
+}
+
+.header .navbar a{
+    margin: 8px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    color:#fff;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.header .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color:var(--main-color);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    background: url(house/h2.webp);
+    background-size: cover;
+
+}
+
+.home .content{
+    width: 60rem;
+    margin: 150px;
+}
+
+.home .content h3{
+    font-size: 55px;
+    text-transform: uppercase;
+    color: rgb(23, 11, 11);
+}
+
+.home .content p{
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 1.8;
+    padding: 5px;
+    color: rgba(138, 150, 67, 0.747);
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap; 
+}
+
+.about .row .image{
+    flex: 500px;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .image .img2{
+    width: 100%;
+   
+}
+
+
+.about .row .contact{
+    flex: 500px;
+    padding: 2rem;
+}
+
+.about .row .contact h3{
+    font-size: 28px;
+    color: #fff;
+}
+
+.about .row .contact p{
+    font-size: 18px;
+    color: #ccc;
+    padding: 1px 0;
+    line-height: 1.8;
+}
+
+.business .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+}
+
+.business .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.business .box-container .box img{
+    height: 150px;
+}
+
+.business .box-container .box h3{
+    color: #fff;
+    font-size: 25px;
+    padding: 3px;
+}
+
+.business .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 2px;
+}
+
+.business .box-container .box .price span{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: line-through;
+}
+
+.business .box-container .box:hover{
+   
+    background: linear-gradient(to bottom right,#e4c1f9,#131213);
+   
+}
+
+.business .box-container .box:hover >*{
+   color:var(--bg);
+}
+
+.mune .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+}
+
+.mune .box-container .box{
+    padding: 15px;
+    text-align: center;
+    border: var(--border);
+}
+
+
+.mune .box-container .box .image{
+    padding: 15px ;
+}
+
+.mune .box-container .box .image img{
+   width: 250px;
+   height: 200px;
+}
+
+.mune .box-container .box .content h3{
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+
+.mune .box-container .box .content .price{
+    color:var(--main-color);
+    font-size: 28px;
+}
+.mune .box-container .box .content .price span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.opinions .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+    gap: 1.5rem;
+}
+
+.opinions .box-container .box{
+    padding: 10px 8px;
+    text-align: center;
+    border: var(--border);
+}
+
+.opinions .box-container .box p{
+    font-size: 15px;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 8px 0;
+}
+
+.opinions .box-container .box .user{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.opinions .box-container .box h3{
+    padding: 5px 0;
+    font-size: 25px;
+    color: #fff;
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.contact .row .map{
+    flex: 45px;
+     width: 100%;
+     object-fit: cover;
+}
+
+.contact .row .map{
+    flex:1 1 45rem;
+}
+
+.contact .row form{
+    flex:  45rem;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.contact .row form h3{
+text-transform: uppercase;
+font-size: 35px;
+color: #fff;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    background: var(--bg);
+    border: var(--border);
+}
+
+.contact .row form .inputBox span{
+    color: #fff;
+    font-size: 20px;
+    padding-left: 8px;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+
+.footer{
+    background:var(--black);
+    text-align: center;
+}
+
+.footer .share{
+    padding: 5px;
+}
+
+.footer .share a{
+    height:50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    color:#fff;
+    border:var(--border);
+    margin:3px;
+    border-radius: 30%;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:20px ;
+    gap:3px;
+}
+
+.footer .links a{
+    padding:15px 10px;
+    color:#fff;
+    border:var(--border);
+    font-size: 20px;
+}
+
+.footer .links a:hover{
+    background:var(--main-color);
+}
+
+.footer .credit{
+    font-size: 22px;
+    color:#fff;
+    font-weight: lighter;
+    padding:5px;
+}
+
+.footer .credit span{
+    color:var(--main-color);
+}
